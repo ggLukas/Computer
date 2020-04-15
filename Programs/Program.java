@@ -18,6 +18,16 @@ public abstract class Program {
 		return listOfInstructions.get(count);
 		
 	}
+	public String toString() {
+		
+		String res = "";
+		for(int i = 0;i<listOfInstructions.size();i++) {
+			
+			res +=  i +  " " + listOfInstructions.get(i) + "'\n'";
+		}
+		return res;
+	}
+	
 	
 	
 	
