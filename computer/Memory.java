@@ -1,17 +1,16 @@
 
-
 public abstract class Memory {
 	
 	private Word[]words;
 	
-	public Memory(int n) {
-		words = new Word[n];
+	public Memory(int size) {
+		words = new Word[size];
 	}
 	public void setWord(Word word, Address address) {
-		words[address.getIndex()] = word;
+		words[address.getLocation()] = word;
 	}
-	public Word getWord(Adress adress) {
-		return words[adress.getIndex()];
+	public Word getWord(Address address) {
+		return words[address.getLocation()];
 	}
 
 }
