@@ -9,8 +9,8 @@ public abstract class Word implements Operand {
 		return value;
 	}
 	
-	public void set(long longen) {
-		value = longen;
+	public void set(Operand op, Memory mem) {
+		value = op.getWord(mem).getValue();
 	}
 	
 	public void add(Word w1, Word w2) {
