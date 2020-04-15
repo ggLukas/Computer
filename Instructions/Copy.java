@@ -2,11 +2,11 @@ package Instructions;
 
 public class Copy implements Instruction {
 	private Operand operand;
-	private Address address;
+	private Adress address;
 	
 	public Copy(Operand operand, Address address) {
 		this.operand = operand;
-		this.address = address;
+		this.adress = address;
 	}
 
 	public void execute(Memory mem, ProgramCounter pc) {
