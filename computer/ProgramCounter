@@ -10,6 +10,9 @@ public class ProgramCounter {
 		
 		
 	}
+	public int getCount() {
+		return count;
+	}
 	
 	public void setIndex(int n) {
 		count = n;
@@ -23,3 +26,4 @@ public class ProgramCounter {
 	}
 
 }
+
