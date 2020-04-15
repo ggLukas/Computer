@@ -1,1 +1,21 @@
+package Instructions;
 
+public abstract class Calculation implements Instruction {
+	private Adress adress;
+	private Operand operand1;
+	private Operand operand2;
+
+	public Calculation(Operand operand1, Operand operand2) {
+		this.operand1 = operand1;
+		this.operand2 = operand2;
+	}
+
+	public void execute(Memory mem, ProgramCounter pc) {
+		Word res = mem.getWord(adress);
+		performCalc(res, operand1.getWord(men), operand2.getWord(mem));
+	}
+
+	public abstract void performCalc(Word res, Word word1, Word word2);
+
+	public abstract String getOpName();
+}
