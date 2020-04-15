@@ -1,9 +1,11 @@
 package Instructions;
 
+import computer.*;
+
 public class Add extends Calculation implements Instruction {
 
-	public Add(Adress adress, Operand operand1, Operand operand2) {
-		super(adress,operand1,operand2);
+	public Add(Address address, Operand operand1, Operand operand2) {
+		super(address,operand1,operand2);
 	}
 	
 
@@ -16,6 +18,19 @@ public class Add extends Calculation implements Instruction {
 		return "Add";
 		
 	}
+
+
+	
+
+
+	
+
+
+	
+
+
+	
 	
 }
+
 
