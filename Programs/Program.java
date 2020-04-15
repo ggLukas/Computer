@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import Instructions.*;
 
 public abstract class Program {
 	
