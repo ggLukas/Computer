@@ -1,0 +1,25 @@
+public class ProgramCounter {
+	
+	
+	
+	private int count = 0;
+	
+	public void endProgram() {
+		
+		count = -1;
+		
+		
+	}
+	
+	public void setIndex(int n) {
+		count = n;
+		
+	}
+	public void next() {
+		count++;
+	}
+	public boolean isRunning() {
+		return count !=-1;
+	}
+
+}
