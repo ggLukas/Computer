@@ -12,7 +12,7 @@ public abstract class Calculation implements Instruction {
 
 	public void execute(Memory mem, ProgramCounter pc) {
 		Word res = mem.getWord(adress);
-		performCalc(res, operand1.getWord(men), operand2.getWord(mem));
+		performCalc(res, operand1.getWord(mem), operand2.getWord(mem));
 	}
 
 	public abstract void performCalc(Word res, Word word1, Word word2);
